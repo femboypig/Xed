@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="source/styles/styles.css" />
+    <link rel="stylesheet" href="source/styles/titlebar.css" />
+    <link rel="stylesheet" href="source/styles/downbar.css" />
+    <link rel="stylesheet" href="source/styles/sidebar.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Xed</title>
+    <script type="module" src="source/kernel/main.js"></script>
+  </head>
+
+  <body>
+    <div id="title-bar" data-tauri-drag-region>
+      <div class="title-bar-left">
+        <div class="window-controls">
+          <button class="window-control close"></button>
+          <button class="window-control minimize"></button>
+          <button class="window-control maximize"></button>
+        </div>
+        <div class="title-info">
+          <span class="project-name">Project name</span>
+        </div>
+      </div>
+      <div class="title-bar-right">
+        <button class="sign-in-button">Sign in</button>
+      </div>
+    </div>
+    
+    <div id="main-container">
+      <div id="sidebar">
+        <div class="sidebar-content">
+          <!-- Sidebar content would go here -->
+          <div class="tree-placeholder">File explorer tree would go here</div>
+        </div>
+      </div>
+      
+      <div id="sidebar-resizer"></div>
+      
+      <div id="content-area">
+        <!-- Main content would go here -->
+        <div class="content-placeholder">Main editor content would go here</div>
+      </div>
+    </div>
+    
+    <div id="status-bar">
+      <div class="status-bar-left">
+        <!-- Empty for now, will hold status items later -->
+      </div>
+      <div class="status-bar-right">
+        <!-- Empty for now, will hold status items later -->
+      </div>
+    </div>
+  </body>
+</html>
